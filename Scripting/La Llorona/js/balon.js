@@ -9,8 +9,12 @@ function Balon(){
         this.direccion = direccion;
     }
 
-    this.rebotar = function(){
-        this.direccion = this.direccion + Math.PI;
+    this.rebotarH = function(){
+        this.direccion = Math.PI-this.direccion;
+    }
+
+    this.rebotarV = function(){
+        this.direccion = -this.direccion;
     }
 
     this.actualizar = function(ctx){
@@ -22,16 +26,14 @@ function Balon(){
         }
         despX = Math.cos(this.direccion) * this.velocidad;
         despY = Math.sin(this.direccion) * this.velocidad;
-        if(this.x + despX>0 && this.x + despX<580){
-            this.x = this.x + despX;
-        } else {
-            this.rebotar();
+        if(this.x + despX < 0 || this.x + despX > 580){
+            this.rebotarH();
         }
-        if(this.y+despY>5 && this.y+despY<410){
-            this.y = this.y + despY;
-        } else {
-            this.rebotar();
+        if(this.y + despY < 0 || this.y + despY > 410){
+            this.rebotarV();
         }
+        this.x = this.x + despX;
+        this.y = this.y + despY;
         ctx.drawImage($("#balon")[0], this.x, this.y);
     }
 
