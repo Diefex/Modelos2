@@ -1,9 +1,9 @@
-#Modelos2
+# Modelos2
 
-##Universidad Distrital Francisco Jose de Caldas  
-###Ingenieria de Sistemas  
-###Modelos de Programacion II  
-####Profesor Alejandro Daza  
+## Universidad Distrital Francisco Jose de Caldas  
+### Ingenieria de Sistemas  
+### Modelos de Programacion II  
+#### Profesor Alejandro Daza  
 
 Talleres y tareas
 
