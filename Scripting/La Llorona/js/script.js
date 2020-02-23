@@ -24,14 +24,14 @@ function capturaTeclado(event){
 		balon.lanzar(0);
 	if(event.which==37 || event.which==65)
 		balon.lanzar(Math.PI);
-	/*if(event.which==67)
+	if(event.which==67)
 		balon.lanzar(Math.PI/4);
 	if(event.which==90)
 		balon.lanzar(3*Math.PI/4);
 	if(event.which==81)
 		balon.lanzar(5*Math.PI/4);
 	if(event.which==69)
-		balon.lanzar(7*Math.PI/4);*/
+		balon.lanzar(7*Math.PI/4);
 	
 }
 
