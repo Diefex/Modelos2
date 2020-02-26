@@ -1,0 +1,56 @@
+body{
+    background-color: #292b2c;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hoja{
+    background-color: #f7f7f7;
+    padding: 10vh;
+    margin: 5vh;
+    margin-left: 20vh;
+    margin-right: 20vh;
+    border-radius: 1%;
+}
+
+.round{
+    border: 2px #0275d8;
+    border-style: solid;
+    border-radius: 100%;
+}
+
+.centered{
+    text-align: center;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.doble-columna{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.seccion{
+    padding-right: 1vw;
+    padding-left: 1vw;
+    font-size: 1rem;
+}
+
+.titulo{
+    font-style: italic;
+    font-size: 1.5rem;
+    color:#0275d8;
+}
+
+.card{
+    font-size: 1rem;
+    color: azure;
+    background-color: #0275d8aa;
+    border-radius: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
