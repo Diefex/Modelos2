@@ -1,0 +1,87 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25/02/2020, 10:41:31 AM
+    Author     : estudiantes
+*/
+
+body{
+  
+/* 
+   background: #e6d690;
+   padding-left: 11em;
+   padding-right: 11em;*/
+   font-family: Arial;
+   color: black;
+   margin: 0;
+  }
+  
+.header{
+    width: 100%;
+    overflow: hidden;
+    background: #333;
+    color:white; 
+    margin-bottom: 20px;   
+    
+}
+
+.header a{
+    color:white;
+    text-decoration: none;
+    align-items: center; 
+    
+}
+.logo{
+    margin: 1px;
+    margin-top: 20px;
+    margin-bottom:15px;
+}
+.logo-nav-container{
+    display: flex;
+    /*justify-content: space-between;
+    */
+    align-items: center;
+    
+
+}
+
+.nav-container{
+
+    /*justify-content: space-between;
+    */
+    line-height: 0.2em;
+}
+
+.navigation{
+    align-items: right;
+    line-height: 4em;
+}
+p{
+    font-size: 1.1rem;
+    line-height: 1.6em;
+}
+
+/*ul.navbar {
+    position: absolute;
+    top: 2em;
+    left: 4em;
+    right: 7em;
+    width: 9em }*/
+
+h1 {
+    font-family: Helvetica,Arial
+}
+
+
+.container{
+    width: 85%;
+    max-width: 1250px;
+    margin:0 auto;
+    line-height: 0.8em;
+}
+
+
+
