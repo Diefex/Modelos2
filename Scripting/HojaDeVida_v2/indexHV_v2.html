@@ -1,0 +1,328 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>Hoja de Vida v2</title>
+
+    <!-- Scripts -->
+    <script src="js/jquery-1.11.0.min.js" language="JavaScript1.2"></script>
+		<script src="js/datos.js" language="JavaScript1.2"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    <div class="container">
+  <div class="py-5 text-center">
+    <h2>Crea tu propia hoja de vida!</h2>
+    <p class="lead">Introduce tus datos en el siguiente formulario para crear tu propia hoja de vida</p>
+  </div>
+
+    <div class="container">
+
+      <!-- Datos Personales -->
+      <h4 class="mb-3">Datos Personales</h4>
+      <form class="needs-validation" novalidate="">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="Nombres">Nombres</label>
+            <input type="text" class="form-control" id="Nombres" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              Introduce tu nombre
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="Apellidos">Apellidos</label>
+            <input type="text" class="form-control" id="Apellidos" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              Introduce tu apellido
+            </div>
+          </div>
+        </div>
+
+        <label for="FechaNac">Fecha de Nacimiento</label>
+        <div class="row" id="FechaNac">
+            <div class="col-md mb-3">
+                <select class="custom-select mr-sm-2" id="fnacD">
+                    <option selected>Dia</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div class="col-md mb-3">
+                <select class="custom-select mr-sm-2" id="fnacM">
+                    <option selected>Mes</option>
+                    <option value="1">Enero</option>
+                    <option value="2">Febrero</option>
+                    <option value="3">Marzo</option>
+                    <option value="4">Abril</option>
+                    <option value="5">Mayo</option>
+                    <option value="6">Junio</option>
+                    <option value="7">Julio</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Septiembre</option>
+                    <option value="10">Octubre</option>
+                    <option value="11">Noviembre</option>
+                    <option value="12">Diciembre</option>
+                </select>
+            </div>
+            <div class="col-md mb-3">
+                <select class="custom-select mr-sm-2" id="fnacA">
+                    <option selected>Año</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md mb-3">
+            <label for="Cedula">Cedula </label>
+            <input type="Cedula" class="form-control" id="Cedula">
+            <div class="invalid-feedback">
+              por favor ingrese una cedula valida
+            </div>
+          </div>
+  
+          <div class="col-md mb-3">
+            <label for="Telefono">Telefono </label>
+            <input type="Telefono" class="form-control" id="Telefono">
+            <div class="invalid-feedback">
+              por favor ingrese un telefono valido
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email">Email <span class="text-muted">(Opcional)</span></label>
+          <input type="email" class="form-control" id="email" placeholder="usted@ejemplo.com">
+          <div class="invalid-feedback">
+            por favor ingrese una direccion de email valida
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="direccion">Dirección</label>
+          <input type="text" class="form-control" id="direccion" placeholder="cr. 39b N.45-25" required="">
+          <div class="invalid-feedback">
+            Por favor ingrese su dirección
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md mb-3">
+                <label for="Pais">País</label>
+                <input type="text" class="form-control" id="Pais" required="">
+                <div class="invalid-feedback">
+                  Por favor ingrese su país de residencia
+                </div>
+            </div>
+            <div class="col-md mb-3">
+                <label for="Ciudad">Ciudad</label>
+                <input type="text" class="form-control" id="Ciudad" required="">
+                <div class="invalid-feedback">
+                  Por favor ingrese su país de residencia
+                </div>
+            </div>
+        </div>
+      </form>
+
+      <hr class="mb-4">
+
+      <!-- Perfil -->
+      <h4 class="mb-3">Perfil</h4>
+        <form class="needs-validation" novalidate="">
+            <div class="mb-3">
+                <label for="Descripcion">Descripción Personal</label>
+                <textarea class="form-control" id="Descripcion" rows="3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius tempore dolore officia, ducimus sit natus aperiam facilis, eaque rem modi debitis atque iure, voluptate optio aut? Ipsum dicta assumenda nesciunt!
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus pariatur voluptate modi reiciendis quia neque unde, deserunt fugiat nulla placeat, voluptatum quibusdam delectus sequi repellat facilis impedit vero nostrum aspernatur.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nisi perferendis, cumque consequuntur ab laborum totam ratione optio quas hic amet dolorum labore doloremque architecto nihil sed eveniet nulla quod?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quos porro iusto ab sed. Suscipit ipsam provident consectetur delectus deserunt temporibus nam quia. Officiis numquam, eligendi adipisci repellat est eos.
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sed enim repellat amet ipsam numquam odio? Dolor quaerat consequatur quisquam perspiciatis, porro reprehenderit totam, nulla non ex aspernatur, magni officia!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero amet ipsam velit consequuntur nisi maiores sint quia odio quam hic. Illum tenetur tempore possimus, dolore itaque cupiditate enim doloremque? Adipisci? 
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aliquam magnam doloribus possimus, explicabo officia aut quibusdam provident voluptatum ex quas ab eaque eius placeat eum cupiditate minima iste omnis!
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id ipsum voluptas, laudantium debitis cumque maiores animi voluptates reprehenderit dolorem dignissimos voluptatum eos sed et exercitationem, nesciunt repudiandae eius officia molestias.
+                </textarea>
+            </div>
+
+            <!-- Formacion Academica -->
+            <h5 class="mb-3">Formación Académica</h5>
+            <label>Secundaria</label>
+            <div class="row">
+                <div class="col-md mb-3">
+                    <input type="text" class="form-control" id="institucion" placeholder="Nombre de la Institucion" required="">
+                    <div class="invalid-feedback">
+                        Ingrese una institucion
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-md mb-3">
+                <select class="custom-select mr-sm-2" id="secD">
+                    <option selected>Desde</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                </select>
+            </div>
+            <div class="col-md mb-3">
+                <select class="custom-select mr-sm-2" id="secH">
+                    <option selected>Hasta</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">actualmente</option>
+                </select>
+            </div>
+            </div>
+            <label>Universitaria</label>
+            <div class="row">
+                <div class="col-md mb-3">
+                    <input type="text" class="form-control" id="universidad" placeholder="Nombre de la Institucion" required="">
+                    <div class="invalid-feedback">
+                        Ingrese una institucion
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-md mb-3">
+                <select class="custom-select mr-sm-2" id="uniD">
+                    <option selected>Desde</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                </select>
+            </div>
+            <div class="col-md mb-3">
+                <select class="custom-select mr-sm-2" id="uniH">
+                    <option selected>Hasta</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">actualmente</option>
+                </select>
+            </div>
+            </div>
+
+            <!-- Experiencia Laboral -->
+            <h5 class="mb-3">Experiencia Laboral </h5>
+            <div class="row">
+                <div class="col-md mb-3">
+                    <input type="text" class="form-control" id="empresa" placeholder="Nombre de la Empresa" required="">
+                    <div class="invalid-feedback">
+                        Ingrese el Nombre de la Empresa
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md mb-3">
+                    <input type="text" class="form-control" id="cargo" placeholder="Rol o Cargo" required="">
+                    <div class="invalid-feedback">
+                        Ingrese el Rol o Cargo que desempeñó
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-md mb-3">
+                  <select class="custom-select mr-sm-2" id="carD">
+                      <option selected>Desde</option>
+                      <option value="2000">2000</option>
+                      <option value="2001">2001</option>
+                      <option value="2002">2002</option>
+                      <option value="2003">2003</option>
+                      <option value="2004">2004</option>
+                      <option value="2005">2005</option>
+                      <option value="2006">2006</option>
+                      <option value="2007">2007</option>
+                      <option value="2008">2008</option>
+                      <option value="2009">2009</option>
+                      <option value="2010">2010</option>
+                  </select>
+              </div>
+              <div class="col-md mb-3">
+                  <select class="custom-select mr-sm-2" id="carH">
+                      <option selected>Hasta</option>
+                      <option value="2010">2010</option>
+                      <option value="2011">2011</option>
+                      <option value="2012">2012</option>
+                      <option value="2013">2013</option>
+                      <option value="2014">2014</option>
+                      <option value="2015">2015</option>
+                      <option value="2016">2016</option>
+                      <option value="2017">2017</option>
+                      <option value="2018">2018</option>
+                      <option value="2019">2019</option>
+                      <option value="2020">actualmente</option>
+                  </select>
+              </div>
+            </div>
+
+            <hr class="mb-4">
+
+            <!-- Submit -->
+            <button type="button" class="btn btn-primary btn-lg" onclick="extraer()">Crear Hoja de Vida</button>
+        </form>
+
+    </div>
+  </div>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">© 2020 | Diego Velez, Alejandro Ocampo, Oscar Gutierrez</p>
+  </footer>
+</div>
+
+</body></html>

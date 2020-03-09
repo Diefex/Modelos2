@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/estilo.css">
+        <script src="js/jquery-1.11.0.min.js" language="JavaScript1.2"></script>
+        <script src="js/crearHoja.js"></script>
+    </head>
+    <title>
+        Hoja de Vida
+    </title>
+    <body>
+        <div class="hoja">
+            <div class="centered">
+                <img src="img/ud.png" alt="foto perfil" class="round" style="width: 200px;">
+            </div>
+            <div class="centered">
+                <h1 style="color: #0275d8;" id="Nombre">
+                    
+                </h1>
+                
+            </div>
+            <div class="card doble-columna">
+                <div class="seccion">
+                    <div class="doble-columna">
+                        <div class="seccion" style="font-weight: 600;">
+                            Telefono: <br>
+                            Correo: <br>
+                            Direccion: <br>
+                        </div>
+                        <div class="seccion">
+                            <div id="Telefono"></div>
+                            <div id="Correo"></div>
+                            <div id="Direccion"></div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="seccion">
+                    <div class="doble-columna">
+                        <div class="seccion" style="font-weight: 600;">
+                            Cedula: <br>
+                            Edad: <br>
+                        </div>
+                        <div class="seccion">
+                            <div id="Cedula"></div>
+                            <div id="Edad"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="doble-columna" style="margin-top: 5vh;">
+                <div class="seccion">
+                    <h5 class="centered titulo">
+                        Perfil
+                        <div style="background-color: #0275d8; height: 10px;">&nbsp;</div>
+                    </h5>
+                    <p class="justify" id="Descripcion">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius tempore dolore officia, ducimus sit natus aperiam facilis, eaque rem modi debitis atque iure, voluptate optio aut? Ipsum dicta assumenda nesciunt! <br>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus pariatur voluptate modi reiciendis quia neque unde, deserunt fugiat nulla placeat, voluptatum quibusdam delectus sequi repellat facilis impedit vero nostrum aspernatur.<br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nisi perferendis, cumque consequuntur ab laborum totam ratione optio quas hic amet dolorum labore doloremque architecto nihil sed eveniet nulla quod? <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quos porro iusto ab sed. Suscipit ipsam provident consectetur delectus deserunt temporibus nam quia. Officiis numquam, eligendi adipisci repellat est eos. <br>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sed enim repellat amet ipsam numquam odio? Dolor quaerat consequatur quisquam perspiciatis, porro reprehenderit totam, nulla non ex aspernatur, magni officia! <br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero amet ipsam velit consequuntur nisi maiores sint quia odio quam hic. Illum tenetur tempore possimus, dolore itaque cupiditate enim doloremque? Adipisci? <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aliquam magnam doloribus possimus, explicabo officia aut quibusdam provident voluptatum ex quas ab eaque eius placeat eum cupiditate minima iste omnis! <br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id ipsum voluptas, laudantium debitis cumque maiores animi voluptates reprehenderit dolorem dignissimos voluptatum eos sed et exercitationem, nesciunt repudiandae eius officia molestias.
+                    </p>
+                    
+                </div>
+                <div class="seccion">
+                    <h5 class="centered titulo">
+                        Formacion Academica
+                        <div style="background-color: #0275d8; height: 10px;">&nbsp;</div>
+                    </h5>
+                    <p class="justify">
+                        <div class="card">
+                            <h3>Secundaria</h3>
+                            <div id="institucion">institucion</div><br>
+                            <a id="secD">Desde</a> - <a id="secH">Hasta</a>
+                        </div>
+                        <div class="card">
+                            <h3>Universitario</h3>
+                            <div id="universidad"></div><br>
+                            <a id="uniD">Desde</a> - <a id="uniH">Hasta</a>
+                        </div>
+                    </p>
+                    <h5 class="centered titulo">
+                        Experiencia Laboral
+                        <div style="background-color: #0275d8; height: 10px;">&nbsp;</div>
+                    </h5>
+                    <p class="justify">
+                        <div class="card">
+                            <h3 id="empresa">empresa</h3>
+                            <div id="cargo">cargo</div><br>
+                            <a id="carD">Desde</a> - <a id="carH">Hasta</a>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
