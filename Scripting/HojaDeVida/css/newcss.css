@@ -82,5 +82,7 @@ h1 {
     margin:0 auto;
     line-height: 0.8em;
 }
-
+.centered{
+    text-align: center;
+}
 

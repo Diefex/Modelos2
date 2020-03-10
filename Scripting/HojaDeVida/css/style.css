@@ -16,6 +16,9 @@ li{
     
     padding: 1px;
 }
+.centered{
+    text-align: center;
+}
 .col-1{
     width: 24%;
     margin: 3% 3%;
