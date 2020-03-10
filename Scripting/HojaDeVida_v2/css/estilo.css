@@ -45,7 +45,7 @@ body{
 
 .card{
     font-size: 1rem;
-    min-width: 600px;
+    min-width: 30vw;
     color: azure;
     background-color: #0275d8aa;
     border-radius: 0%;
